@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <div class="category">Blog</div>
+            <div class="info">
+                <div class="tags">
+                    <i class="fa-solid fa-tag"></i>
+                    <span></span>
+                </div>
+                <h1 class="title">Cultura de Paz</h1>
+                <p class="subtitle">En un mundo que anhela 
+                    la serenidad en medio de la agitación, 
+                    este blog te invita a explorar caminos que 
+                    nos conduzcan hacia una Cultura de Paz. 
+                    Descubre cómo la empatía, la resolución 
+                    pacífica de conflictos y la cooperación pueden 
+                    allanar el camino hacia un mundo más comprensivo 
+                    y equitativo. ¡Bienvenido a nuestro blog de Cultura de Paz!
+                </p>
+            </div>
+        </header>
+        <section class="details">
+            <div class="item">
+                <h5 class="item-title">Evidencia</h5>
+                <p class="item-text"><span class="item-data"></span>4.2 - Blog educación para la paz</p>
+            </div>
+        </section>
+        <article>
+            <h4>Objetivo</h4>
+            <p>En este blog, nos adentramos en la exploración 
+                de los valores, prácticas y acciones que configuran 
+                la cultura de paz. Más allá de la mera ausencia de 
+                conflictos armados, abrazamos una filosofía de vida que 
+                promueve la comprensión, el diálogo, la igualdad y la 
+                justicia. Sin embargo, lo que distingue a este espacio 
+                es tu voz. Nuestro objetivo es inspirarte, informarte y 
+                empoderarte para que compartas tus opiniones y perspectivas 
+                sobre la paz en tu comunidad y en todo el mundo. Exploraremos 
+                historias de éxito, proporcionaremos consejos prácticos y te brindaremos una plataforma 
+                para que expreses tu visión sobre la cultura de paz en un mundo en constante evolución.
+            </p>
+            <p>Únete a nosotros en este viaje hacia un futuro más pacífico y sostenible, donde tu opinión desempeña un papel fundamental en la construcción de la cultura de paz que deseamos. En este blog, tu voz es el motor que impulsa la búsqueda de la armonía en un mundo que anhela la serenidad en medio de la agitación. ¡Bienvenido a nuestro blog sobre la cultura de paz!</p>
+            <button class="comments-button" onclick="showAllFacebookPosts()">Mostrar Todas las Publicaciones</button>
+            <!-- Contenedor para las publicaciones de Facebook con bordes redondeados estilo Twitter -->
+            <div id="facebookContainer" class="twitter-style-container">
+                <!-- Código de las publicaciones de Facebook -->
+                <div id="facebookPost" class="hidden-facebook-post"></div>
+                <img id="imagen" src="fotof.jfif" alt="Imagen Oculta" style="display: none; width: 656px; height: 1000px; padding: 78px;">
+            </div>
+        </article>
+    </div>
+    
+    <style>
+        /* Estilos para el botón de comentarios */
+        .comments-button {
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .comments-button:hover {
+            background-color: #005bbd;
+        }
+
+
+
+        /* Estilos para ocultar la publicación de Facebook inicialmente */
+        .hidden-facebook-post {
+            display: none;
+        }
+    </style>
+
+    <script>
+        // JavaScript para mostrar las tres publicaciones de Facebook al hacer clic en el botón
+        function showAllFacebookPosts() {
+            const firstPost = '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02JYYFGsC9h4JBRaeKY8wWKt9Ph9gwnEP3GXeVJrxAiSjSi7iK9PRwBFbrR7Ehqp9el%26id%3D61552743797523&show_text=true&width=500" width="500" height="706" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>';
+            const secondPost = '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0zEgxGKuT9yA6WSzcTDhvSUYkJimrF1sPKq9zWKKuXUKr8chfMScXMJwsa57gtQFyl%26id%3D61551416578108&show_text=true&width=500" width="500" height="602" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>';
+            const thirdPost = '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D122100467390101363%26id%3D61553040905340&show_text=true&width=500" width="500" height="474" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>';
+            const fourPost = '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0MqmVUCGnY5kp5oQvr1dZaSthaXmVGyH2cVVSYje6pxTp7hQJAz6QSDu2MSDF6G4Fl%26id%3D100019361703038&show_text=true&width=500" width="500" height="394" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>';
+            const fivePost = '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffrann.box%2Fposts%2Fpfbid02n7hjgXn1oqDic6LsTJ7bZo8qGrxKZ62MkYxXDwCgrTiWbMjuwBAmUY85gtrHeZDSl&show_text=true&width=500" width="500" height="536" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>';
+            const allPosts = firstPost + secondPost + thirdPost + fourPost + fivePost;
+            
+            const imagen = document.getElementById('imagen');
+           imagen.style.display = 'block';
+            
+            document.getElementById('facebookPost').innerHTML = allPosts;
+            document.getElementById('facebookPost').style.display = 'block';
+        }
+        
+    </script>
+</body>
+</html>
